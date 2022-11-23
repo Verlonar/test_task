@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form th:method="POST" th:action="@{/send}" enctype="multipart/form-data">
+    <div>
+        <label for="fileUpload">Выберите файл</label>
+        <br>
+        <input type="file" id="fileUpload" name="pdfFile">
+        <br>
+        <label for="messageTextInput">Введите текст</label>
+        <br>
+        <input type ="text" id="messageTextInput" name="text">
+        <br>
+        <label for="emailInput">Введите адрес электронной почты получателя</label>
+        <br>
+        <input type="text" id="emailInput" name="recipient">
+        <br>
+        <input type="submit" value="Отправить">
+    </div>
+</form>
+</body>
+</html>
